@@ -26,13 +26,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+array.forEach each is basically the same thing as for (let i=array.length; i > 0; i--) with a couple parameters attached and function inside
+forEach performs a function for each item in the array
+.map clones your array, perfoms a function ON each item, and then returns that cloned array to you leaving the original as it was.
+
 2. Explain the difference between a callback and a higher order function.
+
+Callbacks are functions passed into other functions as arguments.      
+Higher-order functions return functions or take in a functions as arguments.  
 
 3. What is closure?
 
+Closures are functions that make references to something outside of their execution context but inside of lexical scope.
+
 4. Describe the four rules of the 'this' keyword.
 
+.this will refrence the window object if its in global scope
+.this will reference whatever is inside parenthisis with .call(), .bind() .apply()
+.this will refrence the object being created if its inside a constructor
+whenever a ".this" has a "." after it and then a function .this is refrencing an object and the function is a method.  this.forEach(
+
 5. Why do we need super() in an extended class?
+
+super() gives the extended class access to the parent classes methods and properties
 
 ### Task 1 - Project Set up
 
